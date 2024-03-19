@@ -1,8 +1,12 @@
-palavra = str(input('Digite a palavra para ser adivinhada: '))
-chance = 0
-palavraEscondida = palavra.__reduce__('', '-')
-print(palavraEscondida)
+palavraEscondida = str(input('Digite a palavra para ser adivinhada: '))
+palavraIncompleta = len(palavraEscondida) * '-'
 
+print(palavraIncompleta)
+chance = 0
 while chance < 5:
-    
-    chance += 1
+    letra = str(input('Digite uma letra da palavra: '))
+    for i in palavraEscondida:
+        print(i)
+    else:
+        chance += 1
+        print(chance)
